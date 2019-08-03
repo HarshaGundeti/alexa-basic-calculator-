@@ -1,0 +1,93 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "calcy",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "calculator",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "type",
+                            "type": "calculate"
+                        },
+                        {
+                            "name": "number_",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is {number} {type} {number_}",
+                        " {type} {number} and {number_}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "calculate",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "minus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "divided by"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "into"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "divide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "multiply"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subtract"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "add"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
